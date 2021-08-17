@@ -18,7 +18,7 @@ class MainViewModel: ViewModel() {
 
     fun getCount() {
         viewModelScope.launch {
-            for (i in 0..1000) {
+            for (i in 0..10) {
                 delay(2000)
                 Log.d("Ruben", "Counter value ${counterValue.value}")
                 counterValue.value = i
